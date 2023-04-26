@@ -2,7 +2,8 @@
 
 namespace App\Http\Livewire\Tweet;
 
-use Illuminate\View\View;
+use App\Models\Tweet;
+use Illuminate\Contracts\View\View;
 use Livewire\Component;
 
 class Create extends Component
@@ -12,5 +13,16 @@ class Create extends Component
     public function render(): View
     {
         return view('livewire.tweet.create');
+    }
+    
+    public function tweet():void
+    {
+        Tweet::create(
+            [
+                'body' => $this->body,
+                'created_by' => auth()->id(),
+            ]
+            );
+        $this->emit('tweet::created');
     }
 }

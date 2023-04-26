@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Livewire\Tweet;
+use App\Http\Livewire\Tweet\Create;
+use App\Models\Tweet;
 use App\Models\User;
 use function Pest\Laravel\assertDatabaseCount;
 use function Pest\Livewire\livewire;
