@@ -26,6 +26,10 @@ class Create extends Component
 
         $this->authorize('create', Tweet::class);
 
+        $this->validate([
+            'body' => 'required|max:140'
+        ]);
+
         Tweet::create(
             [
                 'body' => $this->body,
