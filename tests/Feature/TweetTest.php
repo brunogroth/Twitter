@@ -9,25 +9,25 @@ use function Pest\Laravel\actingAs;
 use function Pest\Laravel\assertDatabaseCount;
 
 /*
- * to run the tests, use "./vendor/bin/pest tests/Feature/TweetTest.php" on terminal.
+ * to run the tests, you can use "./vendor/bin/pest tests/Feature/TweetTest.php" in your terminal.
  *
  */
 
-it('should be able to create a tweet', function() {
+it('should be able to create a tweet', function($tweet) {
     $user = User::factory()->create();
 
     actingAs($user);
     livewire(Create::class)
-        ->set('body', 'This is my first tweet')
+        ->set('body', $tweet)
         ->call('tweet')
         ->assertEmitted('tweet::created');
 
     assertDatabaseCount('tweets', 1);
 
     expect(Tweet::first())
-        ->body->toBe('This is my first tweet')
+        ->body->toBe($tweet)
         ->created_by->toBe($user->id);
-});
+})->with(['My first tweet', 'My second tweet', 'My third tweet']);
 
 it('should make sure that only authenticated users can tweet', function() {
 
@@ -74,4 +74,14 @@ it('should show the tweet on the timeline', function() {
 
     livewire(Timeline::class)
         ->assertSee('This is my first tweet');
+});
+
+it('should set the body as null after tweeting', function() {
+    actingAs(User::factory()->create());
+
+    livewire(Create::class)
+        ->set('body', 'This is my first tweet')
+        ->call('tweet')
+        ->assertEmitted('tweet::created')
+        ->assertSet('body', null);
 });
