@@ -31,7 +31,9 @@
                 <x-menu.item title="Twitter Blue" route="/twitter-blue" icon="twitter-blue" />
                 <x-menu.item title="Profile" route="/profile" icon="profile" />
                 <x-menu.item title="More" route="#" icon="More" />
-
+                <div>
+                    <x-button-tweet> Tweet </x-button-tweet>
+                </div>
             </div>
         </div>
         {{-- END MENU --}}
