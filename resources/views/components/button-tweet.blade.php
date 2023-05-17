@@ -1,5 +1,15 @@
+@props([
+    'sm' => null
+])
 
+@php
+    $size = 'px-4 py-3 text-xl w-4/6 mt-6';
+
+    if($sm){
+        $size = 'py-1 px-5 w-fit';
+    }
+@endphp
 <button
-    {{$attributes->class(['bg-primary rounded-full px-4 py-3 font-extrabold text-xl tracking-wide w-4/6 mt-6'])}}>
+    {{$attributes->class(["bg-primary rounded-full font-extrabold $size"])}}>
     {{ $slot }}
 </button>

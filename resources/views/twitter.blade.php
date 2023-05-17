@@ -44,18 +44,23 @@
                 <h2 class="px-4 py-2 text-xl font-semibold ">Home</h2>
             </div>
             <ul class="flex w-full grid grid-cols-2 text-center text-lg font-bold text-gray-500 border-b-[0.625px] border-[#2f3336]">
-                <li class="pt-3 cursor-pointer hover:bg-neutral-900 flex justify-center">
+                <li class="pt-4 cursor-pointer hover:bg-neutral-900 flex justify-center">
                     <div class="border-b-4 pb-3 border-primary">For you</div>
                 </li>
-                <li class="pt-3 cursor-pointer hover:bg-neutral-900 flex justify-center">
+                <li class="pt-4 cursor-pointer hover:bg-neutral-900 flex justify-center">
                     <div class="border-b-4 pb-3 border-primary">Following</div>
                 </li>
             </ul>
+            <div class="w-full">
+                <livewire:tweet.create />
+                <livewire:timeline />
+            </div>
         </div>
+
         {{-- END CENTER --}}
         {{-- RIGHT --}}
         <div class="">
-            as
+            Bruno
         </div>
     </div>
 </div>
