@@ -8,6 +8,5 @@
             <p class="my-6">{{$tweet->body}}</p>
             <p>{{$tweet->created_at}}</p>
         </div>
-
     @endforeach
 </div>
