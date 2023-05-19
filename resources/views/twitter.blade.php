@@ -39,11 +39,11 @@
         {{-- END MENU --}}
 
         {{-- CENTER --}}
-        <div class="col-span-2 border-x-[0.625px] border-[#2f3336]">
+        <div class="col-span-2 border-x-[0.625px] border-line">
             <div class="flex m-2">
                 <h2 class="px-4 py-2 text-xl font-semibold ">Home</h2>
             </div>
-            <ul class="flex w-full grid grid-cols-2 text-center text-lg font-bold text-gray-500 border-b-[0.625px] border-[#2f3336]">
+            <ul class="flex w-full grid grid-cols-2 text-center text-lg font-bold text-gray-500 border-b-[0.625px] border-line">
                 <li class="pt-4 cursor-pointer hover:bg-neutral-900 flex justify-center">
                     <div class="border-b-4 pb-3 border-primary">For you</div>
                 </li>
