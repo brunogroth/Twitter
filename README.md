@@ -7,16 +7,25 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Twitter
+## Twitter Clone
 
-Thit is a **complete Twitter clone** made in Laravel using **TALL** (Tailwind, Alpine.JS, Laravel and Livewire). It's not just frontend: is a complete **front & backend & database & authentication** project.
+Thit is a **complete Twitter clone** made in PHP + Laravel using **TALL** (Tailwind, Alpine.JS, Laravel and Livewire). It's not just frontend: is a complete **front & backend & database & authentication** project.
 
 Have fun!
 
-📌 At the moment, that's his frontend status (May 14th 2023):
+## Frontend timeline
 
-![image](https://github.com/brunogroth/Twitter/assets/96024737/36101a1f-ef0b-46c3-b314-c75340d7d666)
+1° - May 11th:
 
+<img width="400px" style="backdrop: 100%" src="https://github.com/brunogroth/Twitter/assets/96024737/ab8035b7-b5fa-4c93-95a6-08c97c78ff4a">
+
+2° - May 14th:
+
+<img width="400px" src="https://github.com/brunogroth/Twitter/assets/96024737/36101a1f-ef0b-46c3-b314-c75340d7d666">
+
+📌 At the moment, this is the frontend (May 17th 2023):
+
+![image](https://github.com/brunogroth/Twitter/assets/96024737/e8c51aab-eb5e-4483-b7da-f02442678594)
 
 ## Installation
 1. Clone the project
