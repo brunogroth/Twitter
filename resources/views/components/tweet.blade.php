@@ -24,19 +24,19 @@
                         <x-icons.emoticons.comment />
                         <span class="text-gray-500 font-thin"> 0 </span>
                     </div>
-                    <div class="flex items-center hover:text-heart hover:bg-opacity-10">
+                    <div class="flex items-center hover:text-retweet hover:bg-opacity-10 text-gray-500 font-thin">
                         <x-icons.emoticons.retweet />
-                        <span class="text-gray-500 font-thin"> 0 </span>
+                        <span> 0 </span>
                     </div>
                     <div class="flex items-center hover:text-heart hover:bg-opacity-10">
                         <x-icons.emoticons.heart />
                         <span class="text-gray-500 font-thin"> 0 </span>
                     </div>
-                    <div class="flex items-center hover:text-heart hover:bg-opacity-10">
+                    <div class="flex items-center hover:text-primary hover:bg-opacity-10">
                         <x-icons.emoticons.chart />
                         <span class="text-gray-500 font-thin"> 0 </span>
                     </div>
-                    <div class="flex items-center hover:text-heart hover:bg-opacity-10">
+                    <div class="flex items-center hover:text-primary hover:bg-opacity-10">
                         <x-icons.emoticons.share />
                     </div>
 

@@ -13,7 +13,8 @@ module.exports = {
             colors: {
                 primary: '#1d9bf0',
                 line: '#2f3336',
-                heart: '#d0156c'
+                heart: '#d0156c',
+                retweet: '#00ba7c',
 
             },
             fontFamily: {
