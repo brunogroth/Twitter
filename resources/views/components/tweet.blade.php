@@ -24,9 +24,9 @@
                         <x-icons.emoticons.comment />
                         <span class="text-gray-500 font-thin"> 0 </span>
                     </div>
-                    <div class="flex items-center hover:text-retweet hover:bg-opacity-10 text-gray-500 font-thin">
+                    <div class="flex items-center hover:text-heart hover:bg-opacity-10">
                         <x-icons.emoticons.retweet />
-                        <span> 0 </span>
+                        <span class="text-gray-500 font-thin"> 0 </span>
                     </div>
                     <div class="flex items-center hover:text-heart hover:bg-opacity-10">
                         <x-icons.emoticons.heart />

@@ -39,7 +39,8 @@
         {{-- END MENU --}}
 
         {{-- CENTER --}}
-        <div class="col-span-2 border-x-[0.625px] border-line">
+        <div class="col-span-2 border-x-[0.625px] border-line relative">
+            <div class="sticky top-0 w-full backdrop-blur-lg">
             <div class="flex m-2">
                 <h2 class="px-4 py-2 text-xl font-semibold ">Home</h2>
             </div>
@@ -51,6 +52,7 @@
                     <div class="border-b-4 pb-3 border-primary">Following</div>
                 </li>
             </ul>
+            </div>
             <div class="w-full">
                 <livewire:tweet.create />
                 <livewire:timeline />
