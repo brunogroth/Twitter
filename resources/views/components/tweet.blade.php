@@ -12,11 +12,11 @@
         rounded bg-transparent hover:bg-gray-950 cursor-pointer">
     <a href="#">
         <div class="flex items-start">
-            <div>
+            <div class="w-1/12">
                 <img class="rounded border-gray-100"
                      width="50px" src="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/egg-3442-e1f6463624338504cd021bf23aef8441@1x.jpg">
             </div>
-            <div class="ml-3">
+            <div class="ml-3 w-11/12">
                 <span class="align-middle"> {{$name}} <span class="text-gray-500 font-thin">{{$arroba}} · {{\Carbon\Carbon::createFromDate($tweet->created_at)->shortRelativeDiffForHumans()}}</span></span>
                 <p class="my-1">{{$tweet->body}}</p>
                 <div id="actions" class="flex space-x-14">
