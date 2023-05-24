@@ -56,8 +56,7 @@
             <div class="w-full">
                 <livewire:tweet.create/>
                 <div class="text-center text-primary py-3 border-line border-b-[0.625px]
-                    rounded bg-transparent hover:bg-gray-950 w-full cursor-pointer"
-                >
+                    rounded bg-transparent hover:bg-gray-950 w-full cursor-pointer">
                     Show 205 Tweets
                 </div>
                 <livewire:timeline/>
