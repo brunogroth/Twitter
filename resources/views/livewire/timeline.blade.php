@@ -8,7 +8,7 @@
              {{-- Alpine Property monitoring the screen with JS IntersectionObserver.
                      When the screen get to this div, the function is executed --}}
              x-data="{
-                updateTimeline() {
+                infinityScroll() {
                   const observer = new IntersectionObserver((items) => [
                     items.forEach((item) => {
                       if(item.isIntersecting) {
@@ -19,7 +19,7 @@
                   observer.observe(this.$el)
                 }
              }"
-             x-init="updateTimeline()"
+             x-init="infinityScroll()"
         >
             Load More
         </div>
