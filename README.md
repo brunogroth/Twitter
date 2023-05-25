@@ -13,26 +13,21 @@ Thit is a **complete Twitter clone** made in PHP + Laravel using **TALL** (Tailw
 
 Have fun!
 
-## Frontend timeline
+## How it Looks
 
-1° - May 11th:
+📌 At the moment, this is the frontend (May 25th 2023):
 
-<img width="400px" style="backdrop: 100%" src="https://github.com/brunogroth/Twitter/assets/96024737/ab8035b7-b5fa-4c93-95a6-08c97c78ff4a">
-
-2° - May 14th:
-
-<img width="400px" src="https://github.com/brunogroth/Twitter/assets/96024737/36101a1f-ef0b-46c3-b314-c75340d7d666">
-
-📌 At the moment, this is the frontend (May 17th 2023):
-
-![image](https://github.com/brunogroth/Twitter/assets/96024737/e8c51aab-eb5e-4483-b7da-f02442678594)
+![image](https://github.com/brunogroth/Twitter/assets/96024737/017b801d-6d60-431a-98a1-f2f20407fb0d)
 
 ## Installation
 1. Clone the project
-2. To install all dependencies, go to the project root directory and run `composer install` and `npm install`
-3. Create `.env` file and copy content from `.env.example`
-6. Run migrations by executing `php artisan migrate`
-7. Start the project by running `php artisan serve` and start the vite server (for serving css and js files) by running `npm run dev`
+2. To install all dependencies, go to the project root directory and run `composer install` and `npm install`.
+3. Create `.env` file and copy content from `.env.example` and set your MySQL DB connection variables (DB_USERNAME and DB_PASSWORD) at `.env` file.
+4. [Create a Pusher account](https://pusher.com/) and create an channel setting Laravel as Backend for monitoring the application with WebSocket.
+5. Get your PUSHER_APP_ID, PUSHER_APP_KEY and PUSHER_APP_SECRET an set them in your `.env` file.
+6. Run migrations by executing `php artisan migrate`.
+7. _(optional)_ I made possible to you generate some example tweets by using a TweetSeeder. For that, run `php artisan db:seed`.
+8. Start the project by running `php artisan serve` and start the [Vite](https://vitejs.dev/) server (for serving css and js files) by running `npm run dev`.
 
 ## Author
 
