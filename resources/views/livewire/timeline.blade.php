@@ -1,6 +1,6 @@
 @php use App\Models\User; @endphp
 <div class="text-white text-lg">
-    @foreach($tweets as $tweet)
+    @foreach($this->tweets as $tweet)
         <x-tweet :tweet="$tweet"></x-tweet>
     @endforeach
         <div class="text-center text-primary py-3 border-line border-b-[0.625px]
