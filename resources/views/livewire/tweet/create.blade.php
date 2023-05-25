@@ -6,7 +6,7 @@
         <div class="flex w-full">
             <label class="w-full">
                 <textarea
-                    class="bg-transparent text-gray-600 font-medium text-lg border-none w-full h-16 resize-none mt-3 focus:border-transparent focus:ring-0"
+                    class="bg-transparent text-lg border-none w-full h-16 resize-none mt-3 focus:border-transparent focus:ring-0 focus:text-white"
                     wire:model="body" placeholder="What's happening?!"
                     ></textarea>
             </label>

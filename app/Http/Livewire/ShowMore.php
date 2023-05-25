@@ -11,6 +11,8 @@ use Livewire\Component;
  */
 class ShowMore extends Component
 {
+    protected $listeners = ['echo-private:tweets,TweetHasBeenCreated' => '$refresh'];
+
     public function render():View
     {
         return view('livewire.show-more');
@@ -19,6 +21,8 @@ class ShowMore extends Component
     public function more(): void
     {
         $this->emitTo(Timeline::class, 'showMore');
+        session()->put('last-tweet', Tweet::query()->latest()->first()->id);
+
     }
 
     public function getCountProperty(): int

@@ -15,7 +15,7 @@ class Timeline extends Component
 {
     public int $per_page = 10;
     protected $listeners = [
-        //'tweet::created' => '$refresh',
+        // 'tweet::created' => '$refresh',
         'showMore' => '$refresh'
     ];
 
