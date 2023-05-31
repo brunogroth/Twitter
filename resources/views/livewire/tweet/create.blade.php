@@ -1,7 +1,7 @@
 <div class="pb-2 border-b-[0.625px] border-line">
     <div class="flex align-top space-x-3">
         <div class="ml-3 mt-3 w-[50px] h-[50px]">
-            <img class="rounded-full border-gray-100" src="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/egg-3442-e1f6463624338504cd021bf23aef8441@1x.jpg" >
+            <img class="rounded-full border-gray-100" src="https://media.istockphoto.com/id/1192437350/vector/golden-egg-icon-flat.jpg?s=612x612&w=0&k=20&c=ca6wwY-hqFEgukmH8RHhEAEGg4KaYuw0TlIwWZdwxBA=" >
         </div>
         <div class="flex w-full">
             <label class="w-full">

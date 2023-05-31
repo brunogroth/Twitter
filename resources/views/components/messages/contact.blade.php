@@ -5,7 +5,7 @@
 <div class="flex pl-3 py-3 cursor-pointer hover:bg-neutral-800">
 
     <div class="w-1/6">
-        <img class="rounded-full border-gray-100"
+        <img class="rounded-full border-gray-100 w-10"
              width="50px" src="{{ $image }}">
     </div>
     <div class="ml-1 w-5/6 text-sm">

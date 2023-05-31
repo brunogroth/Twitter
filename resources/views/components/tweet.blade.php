@@ -12,32 +12,32 @@
         rounded bg-transparent hover:bg-gray-950 cursor-pointer">
     <div class="flex items-start">
         <div class="w-1/12">
-            <img class="rounded border-gray-100"
+            <img class="rounded-full border-gray-100"
                  width="50px"
-                 src="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/egg-3442-e1f6463624338504cd021bf23aef8441@1x.jpg">
+                 src="https://media.istockphoto.com/id/1192437350/vector/golden-egg-icon-flat.jpg?s=612x612&w=0&k=20&c=ca6wwY-hqFEgukmH8RHhEAEGg4KaYuw0TlIwWZdwxBA=">
         </div>
         <div class="ml-3 w-11/12">
             <span class="align-middle"> {{$name}} <span
-                    class="text-gray-500 font-thin">{{$arroba}} · {{\Carbon\Carbon::createFromDate($tweet->created_at)->shortRelativeDiffForHumans()}}</span></span>
+                    class="text-gray-500 font-thin group-hover">{{$arroba}} · {{\Carbon\Carbon::createFromDate($tweet->created_at)->shortRelativeDiffForHumans()}}</span></span>
             <p class="my-1">{{$tweet->body}}</p>
             <div id="actions" class="flex space-x-14">
-                <div class="flex items-center hover:text-heart hover:bg-opacity-10">
+                <div class="flex items-center group hover:text-primary hover:bg-opacity-10">
                     <x-icons.emoticons.comment/>
-                    <span class="text-gray-500 font-thin"> 0 </span>
+                    <span class="text-gray-500 font-thin group-hover:text-primary"> 0 </span>
                 </div>
-                <div class="flex items-center hover:text-heart hover:bg-opacity-10">
+                <div class="flex items-center group hover:text-retweet hover:bg-opacity-10">
                     <x-icons.emoticons.retweet/>
-                    <span class="text-gray-500 font-thin"> 0 </span>
+                    <span class="text-gray-500 font-thin group-hover:text-retweet"> 0 </span>
                 </div>
-                <div class="flex items-center hover:text-heart hover:bg-opacity-10">
+                <div class="flex items-center group hover:bg-opacity-10">
                     <x-icons.emoticons.heart/>
-                    <span class="text-gray-500 font-thin"> 0 </span>
+                    <span class="text-gray-500 font-thin group-hover group-hover:text-heart"> 0 </span>
                 </div>
-                <div class="flex items-center hover:text-primary hover:bg-opacity-10">
+                <div class="flex items-center group hover:text-primary hover:bg-opacity-10">
                     <x-icons.emoticons.chart/>
-                    <span class="text-gray-500 font-thin"> 0 </span>
+                    <span class="text-gray-500 font-thin group-hover:text-primary"> 0 </span>
                 </div>
-                <div class="flex items-center hover:text-primary hover:bg-opacity-10">
+                <div class="flex items-center group hover:text-primary hover:bg-opacity-10">
                     <x-icons.emoticons.share/>
                 </div>
             </div>

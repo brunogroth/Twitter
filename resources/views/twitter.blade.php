@@ -34,7 +34,7 @@
             <h1 class="font-extrabold text-2xl pt-2 pl-4">Relevant people</h1>
             {{-- TODO FOREACH USER --}}
             <x-cards.card-home-user
-                image="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/egg-3442-e1f6463624338504cd021bf23aef8441@1x.jpg"
+                image="https://media.istockphoto.com/id/1192437350/vector/golden-egg-icon-flat.jpg?s=612x612&w=0&k=20&c=ca6wwY-hqFEgukmH8RHhEAEGg4KaYuw0TlIwWZdwxBA="
                 username="Epictetus" at="@epic_tetus"
                 bg_transparent
             >
@@ -63,15 +63,15 @@
             <h1 class="font-extrabold text-2xl pt-2 pl-4">Who to follow</h1>
             {{-- TODO FOREACH USER --}}
             <x-cards.card-home-user
-                image="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/egg-3442-e1f6463624338504cd021bf23aef8441@1x.jpg"
+                image="https://media.istockphoto.com/id/1192437350/vector/golden-egg-icon-flat.jpg?s=612x612&w=0&k=20&c=ca6wwY-hqFEgukmH8RHhEAEGg4KaYuw0TlIwWZdwxBA="
                 username="Marcus Aurelius" at="@aurelius_mark"
             />
             <x-cards.card-home-user
-                image="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/egg-3442-e1f6463624338504cd021bf23aef8441@1x.jpg"
+                image="https://media.istockphoto.com/id/1192437350/vector/golden-egg-icon-flat.jpg?s=612x612&w=0&k=20&c=ca6wwY-hqFEgukmH8RHhEAEGg4KaYuw0TlIwWZdwxBA="
                 username="Epictetus" at="@epic_tetus"
             />
             <x-cards.card-home-user
-                image="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/egg-3442-e1f6463624338504cd021bf23aef8441@1x.jpg"
+                image="https://media.istockphoto.com/id/1192437350/vector/golden-egg-icon-flat.jpg?s=612x612&w=0&k=20&c=ca6wwY-hqFEgukmH8RHhEAEGg4KaYuw0TlIwWZdwxBA="
                 username="1984 is real!" at="@Orwell_George"
             />
             <div class="pl-4 text-primary py-3
