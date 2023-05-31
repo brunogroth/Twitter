@@ -16,9 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('home', 'twitter')->name('twitter');
-Route::get('messages', Messages::class);
-
+Route::view('home', 'twitter')->middleware('auth')->name('twitter');
+Route::get('messages', Messages::class)->middleware('auth')->name('messages');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -32,10 +31,9 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/', function () {
-    return view('twitter');
+    return redirect('home');
 });
 
-Route::get('timeline', Timeline::class);
 
 
 

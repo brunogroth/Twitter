@@ -35,9 +35,8 @@
 
         {{-- END CENTER --}}
         {{-- RIGHT --}}
-        <div class="mt-2">
-            <div class="flex relative h-16 bg-red-500">
-
+        <div class="mt-2 w-[130%]">
+            <div class="flex relative h-24 ">
         </div>
     </div>
 </div>
