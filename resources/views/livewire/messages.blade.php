@@ -5,9 +5,7 @@
             <div class="flex m-2">
                 <h2 class="px-4 py-2 text-xl font-semibold ">Messages</h2>
             </div>
-            <button class="flex items-end text-sm space-x-1 group">
-                <x-icons.messages.new-message/>
-            </button>
+            <livewire:room.create />
         </div>
         <div class="flex w-80 text-center mx-6 text-gray-500 mb-3">
             <x-icons.search class="absolute mt-2 ml-4"/>
