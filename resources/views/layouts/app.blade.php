@@ -38,6 +38,8 @@
             </div>
             {{-- END MENU --}}
             {{ $slot }}
+
+            <livewire:room.create-modal />
         </div>
         @livewireScripts
     </body>
