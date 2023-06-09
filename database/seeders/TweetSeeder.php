@@ -19,6 +19,7 @@ class TweetSeeder extends Seeder
             'email' => 'johngalt@gmail.com'
 
         ]);
+        User::factory()->count(10)->create();
         Tweet::factory()->count(400)->create([
             'created_by' => User::first()
         ]);
