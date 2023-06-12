@@ -24,5 +24,6 @@ class CreateModal extends Component
         $room->users()->attach(auth()->id());
 
         $this->emit('room::select', ['room' => $room->id]);
+        $this->dispatchBrowserEvent('close-modal', 'new-chat-modal');
     }
 }
