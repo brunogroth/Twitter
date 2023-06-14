@@ -30,5 +30,7 @@ class SearchAndList extends Component
     public function selectRoom($id):void
     {
         $this->selectedRoom = Room::find($id);
+
+        $this->emit('room::chat', ['room' => $id]);
     }
 }
