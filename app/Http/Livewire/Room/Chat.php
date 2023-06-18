@@ -21,8 +21,10 @@ class Chat extends Component
 
     public function selectRoom($id)
     {
-        $this->room = Room::query()->with('users', function ($query) {
-            return $query->where('user_id', '!=', auth()->id());
+        $this->room = Room::query()
+            ->with('messages')
+            ->with('users', function ($query) {
+                return $query->where('user_id', '!=', auth()->id());
         })->where('id', '=', $id)->first();
 
         $this->recipient = $this->room?->users?->first();

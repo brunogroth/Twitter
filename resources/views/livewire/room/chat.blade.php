@@ -20,38 +20,22 @@
             </div>
             <div class="flex justify-end">
                 <div class="w-fit">
-                    <div
-                        class="rounded-full rounded-br-md flex py-2 px-4 bg-[#43b3f6] hover:bg-twitter cursor-pointer text-sm">
-                        Mensagem
-                    </div>
+                    @foreach($room->messages as $message)
+                        <div
+                            class="rounded-full rounded-br-md flex py-2 px-4 bg-[#43b3f6] hover:bg-twitter cursor-pointer text-sm">
+                            {{$message->message}}
+                        </div>
+
+
 
                     <div class="flex text-xs hover:underline text-gray-500 justify-end mt-2 cursor-pointer">
-                        12:14 AM · Sent
+                        {{\Carbon\Carbon::createFromDate($message->created_at)->shortRelativeDiffForHumans()}} · Sent
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
 
-        <div class="border-line border-y-[0.625px] bottom-0 py-2 px-4">
-            <div class="
-                    flex items-center space-x-1 px-1
-                    rounded-2xl bg-gray-600 bg-opacity-40 w-full h-10
-                ">
-                <button class="flex fill-primary hover:bg-primary hover:bg-opacity-10 p-1 rounded-full">
-                    <x-icons.image/>
-                </button>
-                <button class="flex fill-primary hover:bg-primary hover:bg-opacity-10 p-1 rounded-full">
-                    <x-icons.gif/>
-                </button>
-                <button class="flex fill-primary hover:bg-primary hover:bg-opacity-10 p-1 rounded-full">
-                    <x-icons.emoticons.smile/>
-                </button>
-                <input type="text" placeholder="Start a new message"
-                       class="w-full bg-transparent focus:outline-none hover:outline-none border-0 outline-none focus:ring-0">
-                <button class="flex fill-primary hover:bg-primary hover:bg-opacity-10 p-1 rounded-full">
-                    <x-icons.messages.send/>
-                </button>
-            </div>
-        </div>
+        <livewire:room.chat.send-message />
     @endif
 </div>
