@@ -27,22 +27,5 @@
 
             >Mensagem</x-messages.contact>
         @endforeach
-        <x-messages.contact
-            image="https://media.istockphoto.com/id/1192437350/vector/golden-egg-icon-flat.jpg?s=612x612&w=0&k=20&c=ca6wwY-hqFEgukmH8RHhEAEGg4KaYuw0TlIwWZdwxBA="
-            username="Marcus Aurelius" at="@aurelius_mark"
-
-
-        >Mensagem</x-messages.contact>
-        <x-messages.contact
-            image="https://media.istockphoto.com/id/1192437350/vector/golden-egg-icon-flat.jpg?s=612x612&w=0&k=20&c=ca6wwY-hqFEgukmH8RHhEAEGg4KaYuw0TlIwWZdwxBA="
-            username="Marcus Aurelius" at="@aurelius_mark"
-
-        >
-            Vem pra caixa
-        </x-messages.contact>
-        <x-messages.contact
-            image="https://media.istockphoto.com/id/1192437350/vector/golden-egg-icon-flat.jpg?s=612x612&w=0&k=20&c=ca6wwY-hqFEgukmH8RHhEAEGg4KaYuw0TlIwWZdwxBA="
-            username="Marcus Aurelius" at="@aurelius_mark"
-        />
     </div>
 </div>

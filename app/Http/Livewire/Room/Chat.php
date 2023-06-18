@@ -12,7 +12,10 @@ class Chat extends Component
     public ?Room $room = null;
     public ?User $recipient = null;
 
-    protected $listeners = ['room::chat' => 'selectRoom'];
+    protected $listeners = [
+        'room::chat' => 'selectRoom',
+        'message::sent' => '$refresh'
+    ];
 
     public function render()
     {

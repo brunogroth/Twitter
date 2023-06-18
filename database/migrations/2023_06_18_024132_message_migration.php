@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('room_id');
             $table->foreignId('from_id');
-            $table->foreignId('to_id');
             $table->string('message');
             $table->timestamps();
         });

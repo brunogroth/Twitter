@@ -21,13 +21,10 @@
             <div class="flex justify-end">
                 <div class="w-fit">
                     @foreach($room->messages as $message)
-                        <div
-                            class="rounded-full rounded-br-md flex py-2 px-4 bg-[#43b3f6] hover:bg-twitter cursor-pointer text-sm">
-                            {{$message->message}}
-                        </div>
-
-
-
+                    <div
+                        class="rounded-full rounded-br-md flex py-2 px-4 bg-[#43b3f6] hover:bg-twitter cursor-pointer text-sm">
+                        {{$message->message}}
+                    </div>
                     <div class="flex text-xs hover:underline text-gray-500 justify-end mt-2 cursor-pointer">
                         {{\Carbon\Carbon::createFromDate($message->created_at)->shortRelativeDiffForHumans()}} · Sent
                     </div>
@@ -36,6 +33,6 @@
             </div>
         </div>
 
-        <livewire:room.chat.send-message />
+        <livewire:room.chat.send-message :room="$room"/>
     @endif
 </div>
